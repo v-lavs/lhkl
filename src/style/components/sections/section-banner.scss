@@ -1,7 +1,13 @@
 .section-banner {
   position: relative;
-  padding-top: 88px;
+  padding-top: 225px;
   padding-bottom: 100px;
+
+  background-image: url(../assets/img/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: 100%;
+  background-size: 100%;
 
   &.decor:before {
     left: 0;
