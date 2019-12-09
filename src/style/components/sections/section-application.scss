@@ -14,13 +14,9 @@
   .heading-section {
     margin-bottom: 40px;
 
-    &.decor:before {
+    &:before {
       left: 24%;
       right: 24%;
-    }
-
-    .wrap-info-img {
-      width: 40%;
     }
   }
 
@@ -37,6 +33,7 @@
 
   &__item {
     position: relative;
+
     padding-top: 20px;
     padding-bottom: 30px;
   }
@@ -69,8 +66,9 @@
 }
 
 .wrap-info-img {
+  align-self: center;
   width: 40%;
-
+  padding: 0 40px;
   .img {
     margin-bottom: 40px;
   }
@@ -82,7 +80,7 @@
 
   &__item {
     display: flex;
-
+    align-items: center;
     &:last-child {
       &.decor:before {
         background: transparent;
@@ -142,7 +140,7 @@
   position: relative;
   width: 106px;
   height: 106px;
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 38px;

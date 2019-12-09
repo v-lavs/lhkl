@@ -3,36 +3,43 @@
   margin-bottom: 120px;
   color: #373737;
   font-family: $book-fonts;
+
   .heading-section {
-    margin-bottom: 40px;
-    &.decor:before {
-      left: 0;
-      right: 37%;
+    display: inline-block;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    &:before {
+      left: auto;
+      right: auto;
+      width: 80%;
     }
   }
-  .container{
-    //display: flex;
-    height: 100vh;
-    padding-left: 150px;
-    .text{
+  .text{
+    & > * {
+      overflow: hidden;
+    }
+    p {
       margin-bottom: 45px;
     }
-    //wight: 100vw;
+
+    & > .zoom-img {
+      position: relative;
+      float: right;
+      width: 40%;
+      padding-top: 36%;
+      overflow: visible;
+      margin-left: 40px;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 110%;
+        height: auto;
+        vertical-align: middle;
+      }
+    }
   }
-  .shaped{
-    background: url(../assets/img/zoom.png) center top no-repeat;
-    height: 90vh;
-    width: 40vw;
-    background-size: cover;
-    shape-margin: 20px;
-    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    float: right;
-  }
-  //.text-content,
-  //.wrap-img{
-  //  width: 50%;
-  //}
+
   .text-content{
     padding-left: 150px;
     color: #373737;
@@ -41,16 +48,46 @@
       margin-bottom: 45px;
     }
   }
-  .bg-text-content{
-    background-image: url(../assets/img/drop.png);
-    //background-size: cover;
-    background-size: 50%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    //min-height: 88px;
-    min-height: 95px;
-    margin-bottom: 20px;
 
+  .text-bg-separator{
+    background-image: url(../assets/img/drop.png);
+    background-position: 0 0;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+@include respond-to($md) {
+  .section-works {
+    padding-top: 180px;
+    .heading-section {
+      max-width: 250px;
+      margin-bottom: 50px;
+      padding-bottom: 40px;
+    }
+    .text {
+      position: relative;
+      & > .zoom-img {
+        position: absolute;
+        top: 0;
+        -webkit-transform: translateY(-100%) rotate(-10deg);
+        -moz-transform: translateY(-100%) rotate(-10deg);
+        -ms-transform: translateY(-100%) rotate(-10deg);
+        -o-transform: translateY(-100%) rotate(-10deg);
+        transform: translateY(-100%) rotate(-10deg);
+        float: none;
+        width: 60vw;
+        max-width: 595px;
+        padding-top: 51%;
+        margin-left: 280px;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
