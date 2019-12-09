@@ -34,6 +34,65 @@
   padding-right: 75px;
 }
 
+
+.reason-list{
+  &__item{
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    color: $purple;
+    .text{
+      font-family: $secondary-fonts;
+      font-size: 22px;
+      line-height: 0.8;
+      text-align: center;
+      color: $purple;
+    }
+  }
+}
+.substrate{
+  display: flex;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top, #804ddf, #9648e9, #ae40f1, #c632f7, #df15fc);
+  margin: 0 auto 10px;
+}
+
+.wrap-reason{
+  background-color: $white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 5px 4px 4px #774d96;
+  &-1{
+    background-image: url(../assets/img/harchyvannya.png);
+  }
+  &-2{
+    background-image: url(../assets/img/tabletki.png);
+  }
+  &-3{
+    background-image: url(../assets/img/mama.png);
+  }
+  &-4{
+    background-image: url(../assets/img/man.png);
+  }
+  &-5{
+    background-image: url(../assets/img/bagaj.png);
+  }
+  &-6{
+    background-image: url(../assets/img/nervy.png);
+  }
+  &-7{
+    background-image: url(../assets/img/boli.png);
+  }
+
+}
+
 .bg-intestine {
   background-image: url(../assets/img/intestine.png);
   background-position: center center;
