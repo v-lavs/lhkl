@@ -32,13 +32,14 @@ body {
 .wrapper {
   position: relative;
   padding-bottom: 120px;
+  overflow: hidden;
   z-index: 2;
+}
 
-  .container {
-    max-width: 1920px;
-    width: 100%;
-    margin: auto;
-  }
+.container {
+  max-width: 1640px;
+  width: 100%;
+  margin: auto;
 }
 
 .clearfix:after {
@@ -75,6 +76,7 @@ body {
     left: 6%;
     right: 6%;
     bottom: 0;
+    z-index: 3;
   }
 
   &_primary {
@@ -101,7 +103,9 @@ body {
   position: relative;
   text-align: center;
   font-family: $secondary-fonts;
+  line-height: 1.1;
   text-transform: uppercase;
+  padding-bottom: 25px;
   margin: 0 auto;
   &.decor:before {
     left: 42%;
@@ -116,10 +120,17 @@ body {
   right: 0;
   background-color: $primary-color;
   color: #fff;
-  height: 100px;
+  padding: 20px 0;
   max-height: 15%;
   width: 100%;
   z-index: 1000;
+}
+
+.footer__text-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 8vh;
 }
 
 .benefit-list{
@@ -178,3 +189,8 @@ body {
   background-image: url(../assets/img/icons/bootle.svg);
 }
 
+@include respond-to($xl) {
+.container {
+  max-width: 1200px;
+}
+}

@@ -1,19 +1,20 @@
 .section-features {
   padding-bottom: 100px;
-
   .actions-info {
     display: flex;
     width: 80%;
-    margin: -65px auto 140px;
+    margin: 0 auto 140px;
     justify-content: space-between;
+    -webkit-transform: translateX(-65px);
+    transform: translateX(-65px);
   }
-  .benefit-list{
+  .benefit-list {
     width: 90%;
     padding-top: 130px;
-    &__item{
-  .text{
-    color: $primary-color;
-  }
+    &__item {
+      .text {
+        color: $primary-color;
+      }
       &:nth-child(2),
       &:nth-child(4) {
         margin-top: -80px;
@@ -34,6 +35,8 @@
     line-height: 1.4;
     padding: 28px 83px 24px 28px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+    max-width: 435px;
+    cursor: pointer;
 
     &:after {
       position: absolute;
