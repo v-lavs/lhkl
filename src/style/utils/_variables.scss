@@ -1,0 +1,26 @@
+/*
+* Fonts
+*/
+$primary-fonts: 'Fira Sans', sans-serif;
+$secondary-fonts: 'FuturaFuturisC', sans-serif;
+$helper-fonts: 'Myriad Pro', sans-serif;
+$book-fonts: 'Fira Sans Book', sans-serif;
+
+/*
+* Colors
+*/
+
+$primary-color: #1597d2;
+$white: #fff;
+$purple: #9944cf;
+
+
+/*
+* Breakpoints
+*/
+
+$xs: '(max-width: 320px)';
+$sm: '(max-width: 767px)';
+$md: '(max-width: 991px)';
+$lg: '(max-width: 1440px)';
+$xl: '(min-width: 1920px)';

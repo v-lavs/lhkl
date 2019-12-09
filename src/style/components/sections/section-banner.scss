@@ -1,0 +1,62 @@
+.section-banner {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 100px;
+
+  &.decor:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.img--banner {
+  max-width: 450px;
+  margin-bottom: 11px;
+}
+
+.slogan {
+  width: 50%;
+  font-family: $helper-fonts;
+  font-weight: 600;
+  color: $primary-color;
+  float: right;
+  padding-left: 83px;
+  margin-bottom: 39px;
+}
+
+.wrap-img-slogan {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  padding-left: 40px;
+  margin-bottom: 80px;
+}
+
+.advantages {
+  width: 50%;
+  float: right;
+  padding-left: 77px;
+}
+
+.advantages-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 590px;
+  background: $white;
+  padding: 14px 14px 17px 95px;
+  border-radius: 15px;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  font-family: $secondary-fonts;
+  min-height: 100px;
+  sup {
+    font-size: 20px;
+  }
+
+}
+
+

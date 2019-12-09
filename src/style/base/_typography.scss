@@ -1,0 +1,30 @@
+/**
+*TEXT UTILITIES
+*/
+
+.text {
+  color: #4e4e4e;
+
+  &_xl {
+    font-size: 39px;
+  }
+
+  &_medium {
+    font-size: 34px;
+  }
+&_small{
+  font-size: 24px;
+}
+  &_uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  font-weight: 400;
+  font-size: 55px;
+
+  &_big {
+
+  }
+}

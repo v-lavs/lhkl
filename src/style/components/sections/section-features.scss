@@ -1,0 +1,67 @@
+.section-features {
+  padding-bottom: 100px;
+
+  .actions-info {
+    display: flex;
+    width: 80%;
+    margin: -65px auto 140px;
+    justify-content: space-between;
+  }
+  .benefit-list{
+    width: 90%;
+    padding-top: 130px;
+    &__item{
+  .text{
+    color: $primary-color;
+  }
+      &:nth-child(2),
+      &:nth-child(4) {
+        margin-top: -80px;
+      }
+      &:nth-child(1),
+      &:nth-child(5) {
+        margin-top: -140px;
+      }
+    }
+  }
+  .action-info {
+    position: relative;
+    width: 87%;
+    border-radius: 15px;
+    color: $white;
+    font-family: $secondary-fonts;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 28px 83px 24px 28px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      background-image: url(../assets/img/triangle.png);
+      width: 46px;
+      height: 55px;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+
+  .bg-violet {
+    background-image: linear-gradient(to right, #c079eb, #b66ce4, #ad5fdd, #a352d6, #9944cf);
+  }
+
+  .bg-blue {
+    background-image: linear-gradient(to right, #40c8ff, #36bdf4, #2cb1ea, #20a6df, #119bd4);
+  }
+
+  .bg-green {
+    background-image: linear-gradient(to right, #00db83, #02cd72, #02bf62, #02b251, #00a441);
+  }
+}

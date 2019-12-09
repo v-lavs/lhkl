@@ -1,0 +1,89 @@
+.section-location {
+  line-height: 1.42;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .heading-section {
+    text-align: left;
+    margin-bottom: 40px;
+
+    &.decor:before {
+      left: 0;
+      right: 70%;
+    }
+  }
+
+  .wrap-map {
+    width: 50%;
+  }
+
+  .content-box {
+    width: 50%;
+    padding-left: 20px;
+
+    p {
+      max-width: 740px;
+    }
+  }
+}
+
+.btn-main {
+  position: relative;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: $secondary-fonts;
+  text-align: left;
+  color: $white;
+  font-weight: 700;
+  line-height: 1.1;
+  border-radius: 37px;
+  padding: 20px 90px 20px 40px;
+  border: 7px solid #eee;
+
+  //box-shadow: 7px 3px 18px -9px rgba(0, 0, 0, 0.7);
+  background-image: radial-gradient(circle, #5acaf3, #3cb6eb, #1da2e3, #018dd8, #0b78cc);
+  margin-top: 65px;
+  transition: background .5s;
+
+  &:hover {
+    transition: background .5s;
+    background-image: radial-gradient(circle, #0b78cc, #018dd8, #1da2e3, #3cb6eb, #5acaf3);
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/img/icons/clicker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 38px;
+    height: 40px;
+    right: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  span {
+    display: block;
+    font-family: $primary-fonts;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+  }
+}
+
+.literature {
+  width: 90%;
+  font-weight: 300;
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.56;
+  padding-left: 80px;
+}

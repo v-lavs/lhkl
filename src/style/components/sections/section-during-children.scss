@@ -1,0 +1,41 @@
+.section-during-children{
+  background-image: url(../assets/img/feather1.png);
+  background-position:6% 67%;
+  background-size: 23%;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-left: 173px;
+  padding-right: 173px;
+  font-family: $book-fonts;
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benefit-list{
+    padding-top: 50px;
+    .text{
+      font-family: $secondary-fonts;
+      font-size: 24px;
+      line-height: 0.89;
+    }
+    &__item{
+      width: 31%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .heading-section{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &.decor:before{
+      left: 0;
+    }
+  }
+  .wrap-img,
+  .right-content {
+    width: 50%;
+  }
+  .wrap-img {
+    padding-right: 147px;
+  }
+}

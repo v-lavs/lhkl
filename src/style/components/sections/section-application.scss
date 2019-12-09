@@ -1,0 +1,197 @@
+.section-application {
+  color: $white;
+  font-size: 24px;
+  line-height: 1.1;
+  padding-top: 58px;
+  .slogan-application {
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-family: $secondary-fonts;
+  }
+
+  .heading-section {
+    margin-bottom: 40px;
+
+    &.decor:before {
+      left: 24%;
+      right: 24%;
+    }
+
+    .wrap-info-img {
+      width: 40%;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+  }
+}
+
+.age-list {
+  padding-left: 100px;
+  padding-top: 25px;
+
+  &__item {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .wrap-icon-bg {
+    width: 23%;
+    margin-right: 25px;
+  }
+
+  .age {
+    width: 30%;
+    padding-right: 5px;
+  }
+
+  .equally {
+    width: 7%;
+    padding: 0 10px;
+    margin: auto;
+  }
+
+  .dosage {
+    vertical-align: bottom;
+    width: 40%;
+    font-size: 28px;
+    font-family: $secondary-fonts;
+    font-weight: 700;
+    padding-left: 15px;
+    margin: auto;
+  }
+}
+
+.wrap-info-img {
+  width: 40%;
+
+  .img {
+    margin-bottom: 40px;
+  }
+}
+
+.reception-list,
+.age-list {
+  width: 30%;
+
+  &__item {
+    display: flex;
+
+    &:last-child {
+      &.decor:before {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.wrap-icon-bg {
+  width: 78px;
+  height: 78px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &-1,
+  &-2 {
+    background-image: url(../assets/img/icons/baby_1-01.svg);
+  }
+
+  &-3 {
+    background-image: url(../assets/img/icons/boy_-01.svg);
+  }
+
+  &-4 {
+    background-image: url(../assets/img/icons/family-01.svg);
+  }
+}
+
+.reception-list {
+  flex-grow: 1;
+  padding-right: 35px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+
+  &__item {
+    display: flex;
+    margin-bottom: 28px;
+
+    .card-text {
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+}
+
+.bg-section-application {
+  background: url(../assets/img/bg-blue.png), radial-gradient(circle, #5acaf3, #3cb6eb, #1da2e3, #018dd8, #0b78cc);
+  background-position: 2% -3%, 0 0;
+  background-repeat: no-repeat;
+  background-size: 50%, cover;
+  padding-top: 15px;
+}
+
+.reception-bg-img {
+  position: relative;
+  width: 106px;
+  height: 106px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 38px;
+
+  &:before {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    font-size: 14px;
+    top: -7px;
+    left: -32px;
+    padding: 3px 5px;
+    background-color: $white;
+    border-radius: 50%;
+    z-index: 1;
+    line-height: 1;
+    color: $primary-color;
+
+  }
+
+  &-1:before {
+    content: '1';
+  }
+
+  &-2:before {
+    content: '2';
+  }
+
+  &-3:before {
+    content: '3';
+  }
+
+  &-4:before {
+    content: '4';
+  }
+}
+
+.reception-bg-img-1 {
+  background-image: url(../assets/img/1.png);
+}
+
+.reception-bg-img-2 {
+  background-image: url(../assets/img/2.png);
+}
+
+.reception-bg-img-3 {
+  background-image: url(../assets/img/3.png);
+}
+
+.reception-bg-img-4 {
+  background-image: url(../assets/img/4.png);
+}
