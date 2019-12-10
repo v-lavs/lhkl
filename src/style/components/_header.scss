@@ -1,7 +1,6 @@
 .burger {
   display: none;
-  width: 30px;
-  height: 28px;
+  width: 80px;
   background-color: transparent;
   border: none;
   margin-left: 17px;
@@ -11,7 +10,7 @@
     width: 100%;
     background-color: #999999;
     height: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -54,7 +53,7 @@
   }
 }
 
-.main-logo{
+.main-logo {
   display: block;
   width: 280px;
   img {
@@ -64,7 +63,7 @@
   }
 }
 
-.logo-link{
+.logo-link {
   display: block;
   width: 170px;
 }
@@ -100,3 +99,20 @@
   z-index: 800;
 }
 
+@media screen and (max-width: 1600px) {
+  .main-logo {
+    max-width: 240px;
+  }
+}
+
+@include respond-to($lg) {
+  .main-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 360px;
+    z-index: 1;
+  }
+}

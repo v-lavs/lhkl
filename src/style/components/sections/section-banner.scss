@@ -43,38 +43,39 @@
   width: 50%;
   float: right;
   padding-left: 77px;
-}
 
-.advantages-card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  max-width: 590px;
-  background: $white;
-  padding: 14px 14px 17px 95px;
-  border-radius: 15px;
-  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
-  line-height: 1.1;
-  margin-bottom: 30px;
-  font-family: $secondary-fonts;
-  min-height: 100px;
-  &:before {
-    position: absolute;
-    content: '';
-    width: 47px;
-    height: 47px;
-    background-image: url(../assets/img/logo-01.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    z-index: 1;
-    left: 4%;
-    top: 50%;
-    transform: translateY(-50%);
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 590px;
+    background: $white;
+    padding: 14px 14px 17px 95px;
+    border-radius: 15px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: $secondary-fonts;
+    min-height: 100px;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 47px;
+      height: 47px;
+      background-image: url(../assets/img/logo-01.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100%;
+      z-index: 1;
+      left: 4%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    sup {
+      font-size: 20px;
+    }
   }
-  sup {
-    font-size: 20px;
-  }
+
 }
 
 
