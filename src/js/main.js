@@ -55,18 +55,18 @@ $(document).ready(function () {
         }
     });
 
-    jQuery("#slider-carousel1").owlCarousel({
-        items: 1,
-        autoHeight: false,
-        pagination: false,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 8000,
-        slideSpeed: 5000,
-        stopOnHover: true,
-        margin: 0,
+    // jQuery("#slider-carousel1").owlCarousel({
+    //     items: 1,
+    //     autoHeight: false,
+    //     pagination: false,
+    //     dots: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 8000,
+    //     slideSpeed: 5000,
+    //     stopOnHover: true,
+    //     margin: 0,
+    // });
 
-    });
 
     /***
      * SMOOTH SCROLL TO ANCHOR
