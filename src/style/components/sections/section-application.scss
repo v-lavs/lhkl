@@ -193,3 +193,27 @@
 .reception-bg-img-4 {
   background-image: url(../assets/img/4.png);
 }
+
+@include respond-to($lg) {
+  .section-application {
+    .wrap-info-img {
+      display: none;
+    }
+    .container {
+      flex-wrap: nowrap;
+    }
+    .reception-list {
+      padding-left: 0;
+      .card-text {
+        display: none;
+      }
+    }
+    .age-list {
+      width: 100%;
+    }
+    .age-list__item,
+    .reception-list__item {
+      height: 174px;
+    }
+  }
+}

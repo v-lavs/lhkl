@@ -1,5 +1,6 @@
 .section-symptoms-cause {
   padding-top: 100px;
+  padding-bottom: 100px;
   font-family: $book-fonts;
   line-height: 1.6;
   color: #373737;
@@ -29,12 +30,16 @@
   }
 }
 
-.causes {
-  position: relative;
+.scheme {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: flex-end;
-  width: 43.5%;
+  width: 90%;
   padding-right: 75px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
   &__img {
     display: block;
     width: 100%;
@@ -150,6 +155,8 @@
 }
 
 .symptoms {
+  position: relative;
+  margin-left: auto;
   width: 55%;
   padding-left: 75px;
   padding-top: 150px;
@@ -178,5 +185,40 @@
 .symptoms-list__item,
 .causes-list__item {
   list-style-type: disc;
+}
 
+@include respond-to($lg) {
+  .symptoms {
+    width: 100%;
+    padding-left: 0;
+    .scheme {
+      position: static;
+      -webkit-transform: none;
+      transform: none;
+      padding: 0;
+      width: 100%;
+      &__img {
+        display: block;
+      }
+    }
+    .reason-list {
+      position: relative;
+      height: auto;
+      width: auto;
+      margin: auto;
+    }
+    .bg-intestine {
+      display: none;
+    }
+    .wrapper-info {
+      padding-left: 60px;
+    }
+    .text_small {
+      font-size: 38px;
+      margin-bottom: 30px;
+    }
+    .symptoms-list {
+      font-size: 40px;
+    }
+  }
 }
