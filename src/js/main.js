@@ -72,13 +72,13 @@ $(document).ready(function () {
                 event.preventDefault();
 
                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 80
-                }, 1000);
+                    scrollTop: $($.attr(this, 'href')).offset().top - 150
+                }, 2000);
             }
         });
     }
 
     smoothScrollToAnchor('#requestDemo');
-    smoothScrollToAnchor('.header .main-nav__link');
+    smoothScrollToAnchor('.header .menu__link, .sub-menu__link');
 
 });
