@@ -37,53 +37,54 @@
   padding-right: 75px;
   &__img {
     display: block;
-    height: 1315px;
-    width: 760px;
+    width: 100%;
+    height: auto;
   }
 }
 
 
 .reason-list{
   position: absolute;
+  height: 1315px;
+  width: 760px;
+
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
   z-index: 1;
   &__item{
     position: absolute;
     max-width: 200px;
+    width: 100%;
     padding: 5px;
     text-align: center;
     color: $purple;
-    &:nth-child(1){
-      top: 13%;
-      left: 7%;
+    &:nth-of-type(odd) {
+      right: 55%;
     }
-    &:nth-child(2){
-      top: 22%;
-      left: 45%;
+    &:nth-of-type(even) {
+      right: 11%;
     }
-    &:nth-child(3){
-      top: 32%;
-      left: 12%;
+    &:nth-of-type(1){
+      top: 12%;
     }
-    &:nth-child(4){
-      top: 42%;
-      left: 46%;
-
+    &:nth-of-type(2){
+      top: 21%;
     }
-    &:nth-child(5){
-      top: 49%;
-      left: 10%;
+    &:nth-of-type(3){
+      top: 30%;
     }
-    &:nth-child(6){
-      top: 59%;
-      left: 49%;
+    &:nth-of-type(4){
+      top: 39%;
     }
-    &:nth-child(7){
-      top: 68%;
-      left: 9%;
+    &:nth-of-type(5){
+      top: 47%;
+    }
+    &:nth-of-type(6){
+      top: 55%;
+    }
+    &:nth-of-type(7){
+      top: 64%;
     }
 
     .text{
