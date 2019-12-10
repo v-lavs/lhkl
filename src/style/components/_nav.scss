@@ -27,6 +27,7 @@
     }
 
     .sub-menu__toggle {
+      display: none;
       position: absolute;
       top: 0;
       right: 0;
@@ -204,7 +205,9 @@
           padding-bottom: 15px;
         }
       }
-
+      .sub-menu__toggle {
+        display: block;
+      }
       .sub-menu__toggle_active + .sub-menu {
         display: block !important;
       }

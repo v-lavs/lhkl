@@ -30,17 +30,62 @@
 }
 
 .causes {
-  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 43.5%;
   padding-right: 75px;
+  &__img {
+    display: block;
+    height: 1315px;
+    width: 760px;
+  }
 }
 
 
 .reason-list{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   &__item{
+    position: absolute;
     max-width: 200px;
     padding: 5px;
     text-align: center;
     color: $purple;
+    &:nth-child(1){
+      top: 13%;
+      left: 7%;
+    }
+    &:nth-child(2){
+      top: 22%;
+      left: 45%;
+    }
+    &:nth-child(3){
+      top: 32%;
+      left: 12%;
+    }
+    &:nth-child(4){
+      top: 42%;
+      left: 46%;
+
+    }
+    &:nth-child(5){
+      top: 49%;
+      left: 10%;
+    }
+    &:nth-child(6){
+      top: 59%;
+      left: 49%;
+    }
+    &:nth-child(7){
+      top: 68%;
+      left: 9%;
+    }
+
     .text{
       font-family: $secondary-fonts;
       font-size: 22px;
@@ -60,35 +105,34 @@
 }
 
 .wrap-reason{
-  background-color: $white;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 100%;
   width: 90px;
   height: 90px;
   border-radius: 50%;
   margin: auto;
   box-shadow: 5px 4px 4px #774d96;
   &-1{
-    background-image: url(../assets/img/harchyvannya.png);
+    background-image: url(../assets/img/harchyvannya1.png);
   }
   &-2{
-    background-image: url(../assets/img/tabletki.png);
+    background-image: url(../assets/img/2tabletki.png);
   }
   &-3{
-    background-image: url(../assets/img/mama.png);
+    background-image: url(../assets/img/vagitnist1.png);
   }
   &-4{
-    background-image: url(../assets/img/man.png);
+    background-image: url(../assets/img/sidinnya1.png);
   }
   &-5{
-    background-image: url(../assets/img/bagaj.png);
+    background-image: url(../assets/img/valiza1.png);
   }
   &-6{
-    background-image: url(../assets/img/nervy.png);
+    background-image: url(../assets/img/stress1.png);
   }
   &-7{
-    background-image: url(../assets/img/boli.png);
+    background-image: url(../assets/img/jivit1.png);
   }
 
 }
@@ -97,7 +141,7 @@
   background-image: url(../assets/img/intestine.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   margin-top: 10px;
   margin-right: 20px;
   width: 140px;
