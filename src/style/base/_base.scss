@@ -197,3 +197,11 @@ body {
     max-width: 1200px;
   }
 }
+
+@include respond-to($lg) {
+  .container {
+    max-width: 1090px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}

@@ -6,15 +6,15 @@
   color: #373737;
 
   .heading-section {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
     line-height: 1.1;
 
     .title {
       max-width: 600px;
     }
 
-    &.decor:before {
+    &:before {
       right: 57%;
       left: 0;
     }
@@ -27,14 +27,15 @@
     justify-content: center;
 
     .text {
-      font-family: $secondary-fonts;
-      line-height: 0.89;
-      font-size: 24px;
+
       margin-bottom: 10px;
     }
 
     &__item {
       width: 33%;
+      font-family: $secondary-fonts;
+      line-height: 0.89;
+      font-size: 24px;
     }
   }
 
@@ -43,12 +44,12 @@
     flex-wrap: wrap;
   }
 
-  .content-text,
+  .section-content,
   .right-content {
     width: 50%;
   }
 
-  .content-text {
+  .section-content {
     padding-right: 40px;
   }
 
@@ -61,11 +62,12 @@
   }
 
   .text {
-    margin-bottom: 50px;
-  }
-
-  .wrap-img {
-    padding: 0 25px;
+    p {
+      margin-bottom: 45px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .properties {
@@ -81,13 +83,13 @@
       height: 130px;
       border-radius: 20px;
       border: 10px solid $white;
-      box-shadow:  5px 5px 49px #c7c7c7,
+      box-shadow: 5px 5px 49px #c7c7c7,
       inset 0px 0px 12px 3px rgba(0, 0, 0, 0.27);;
       background-image: url(../assets/img/36.png), linear-gradient(to right, #00b4ff, #00cfff);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 100%;
-      &:after{
+      &:after {
         position: absolute;
         content: '';
         width: 0;
@@ -147,6 +149,62 @@
     padding-left: 60px;
     padding-right: 18px;
     color: #ffffff;
+  }
+}
+
+.women-img {
+  &_desktop {
+    display: block;
+  }
+  &_mobile {
+    display: none;
+  }
+}
+
+@include respond-to($lg) {
+  .section-during-pregnancy {
+    .heading-section {
+      &:before {
+        left: 0;
+        right: 0;
+      }
+      .title {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+    .section-content,
+    .right-content {
+      width: 100%;
+      padding: 0;
+    }
+    .benefit-list {
+      justify-content: center;
+      &__item {
+        margin-bottom: 70px;
+        max-width: 285px;
+        font-size: 32px;
+        color: #1694d4;
+        .text {
+          color: inherit;
+        }
+      }
+    }
+    .properties {
+      padding-top: 55px;
+    }
+    .box-properties {
+      font-size: 32px;
+    }
+  }
+  .women-img {
+    &_desktop {
+      display: none;
+    }
+    &_mobile {
+      display: block;
+      margin-bottom: 130px;
+    }
   }
 }
 
