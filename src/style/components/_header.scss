@@ -24,7 +24,7 @@
   right: 0;
   top: 0;
   color: #525252;
-  padding: 50px 85px 25px 85px;
+  padding: 50px 15px 25px;
   background-color: #fff;
   z-index: 1000;
   &:before {
@@ -46,49 +46,22 @@
   &__container {
     position: relative;
     display: flex;
+    max-width: 1790px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
   }
 }
-.title-product{
-  display: inline-block;
-  width: 282px;
+
+.main-logo{
+  display: block;
+  width: 280px;
 }
 
 .logo-link{
   display: block;
-  width: 168px;
-}
-//-------- dropdown-language
-
-.dropdown-language {
-  position: relative;
-  display: inline-block;
-  padding-left: 35px;
-  font-size: 27px;
-  font-family: $helper-fonts;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 1.1;
-  margin-left: 70px;
-  &:before{
-    position: absolute;
-    display: block;
-    content: '';
-    background-image: url("../assets/img/icons/dropdown.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 24px;
-    height: 22px;
-    left: 0;
-    top: 2px;
-    z-index: 1;
-  }
-  &:hover .dropdown-content {
-    display: block;
-  }
+  width: 170px;
 }
 
 .dropdown-content {
@@ -108,16 +81,8 @@
   }
 }
 
-//------- navigation
-.info-block {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-grow: 1;
-}
-
 //  ------ backdrop
+
 .backdrop {
   display: none;
   position: fixed;
@@ -127,7 +92,6 @@
   bottom: 0;
   background-color: #000;
   opacity: .5;
-  z-index: 888;
-
+  z-index: 800;
 }
 

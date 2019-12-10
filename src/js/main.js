@@ -13,6 +13,7 @@
 $(document).ready(function () {
 
     var nav = $('.main-nav');
+
     /**
      * MOB MENU SCRIPT
      **/

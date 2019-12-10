@@ -72,7 +72,6 @@
           display: none;
         }
       }
-
     }
 
     //----------
@@ -80,8 +79,6 @@
       position: relative;
 
       & > .menu__link {
-        padding-left: 35px;
-
         &:before {
           position: absolute;
           display: block;
@@ -173,6 +170,9 @@
     transition: transform .5s;
     transform: translateX(-100%);
     z-index: 999;
+    .menu__item {
+      margin: 0;
+    }
 
     &.open {
       transform: translateX(0);
@@ -180,7 +180,7 @@
 
     .menu {
       flex-direction: column;
-      padding: 60px 30px;
+      padding: 60px 20px;
 
       &__item {
         &:hover > .sub-menu {
@@ -216,5 +216,5 @@
   .btn-close {
     display: block !important;
   }
-  }
+}
 
