@@ -65,36 +65,66 @@
   .text {
     margin-bottom: 50px;
   }
-  .wrap-img{
+
+  .wrap-img {
     padding: 0 25px;
   }
 
   .properties {
     display: flex;
+    justify-content: space-between;
     padding-top: 40px;
+
     .wrap-icon {
-      width: 25%;
+      position: relative;
+      flex-shrink: 0;
+      width: 110px;
+      height: 110px;
+      border-radius: 20px;
+      border: 10px solid $white;
+      box-shadow:  5px 5px 49px #c7c7c7,
+      inset 0px 0px 12px 3px rgba(0, 0, 0, 0.27);;
+      background-image: url(../assets/img/36.png), linear-gradient(to right, #00b4ff, #00cfff);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      &:after{
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 0 20px 34px;
+        border-color: transparent transparent transparent #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -42px;
+        z-index: 1;
+      }
     }
+
   }
-  .box-properties{
+
+  .box-properties {
     display: flex;
     align-items: center;
     overflow: hidden;
     border-radius: 15px;
     font-size: 24px;
     line-height: 0.8;
-    width: 75%;
-    box-shadow: 5px 5px 20px #c7c7c7;
+    width: 79%;
+    box-shadow: 5px 5px 27px #c7c7c7;
     font-family: $secondary-fonts;
   }
 
-  .property-1{
+  .property-1 {
     position: relative;
     width: 50%;
     background: $white;
     padding-left: 40px;
     padding-right: 18px;
-    &:after{
+
+    &:after {
       position: absolute;
       content: '';
       width: 0;
@@ -102,15 +132,19 @@
       border-style: solid;
       border-width: 60px 0 60px 34px;
       border-color: transparent transparent transparent #ffffff;
-      right: 0;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -32px;
       z-index: 1;
     }
   }
-  .property-2{
+
+  .property-2 {
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(to right, #00b4ff, #00cfff);
     width: 50%;
-    min-height: 119px;
+    min-height: 110px;
     padding-left: 60px;
     padding-right: 18px;
     color: #ffffff;
