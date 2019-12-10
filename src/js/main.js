@@ -36,28 +36,35 @@ $(document).ready(function () {
     /**
      * OWL-CAROUSEL SCRIPT
      **/
-    var owl = jQuery("#slider-carousel");
-    owl.owlCarousel({
+     jQuery("#slider-carousel").owlCarousel({
         items: 3,
         pagination: false,
+         dots: false,
         nav: true,
+        slideSpeed: 5000,
+        margin:0,
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 150,
+            },
+            1190: {
+                items: 3,
+            }
+        }
+    });
+
+   jQuery("#slider-carousel1").owlCarousel({
+        items: 1,
+       autoHeight: false,
+        pagination: false,
         dots: true,
         autoplay: true,
         autoplayTimeout: 8000,
         slideSpeed: 5000,
         stopOnHover: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            970: {
-                items: 3,
-                loop: false
-            }
-        }
+        margin:0,
+
     });
 
     /***
