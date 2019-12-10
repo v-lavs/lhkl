@@ -163,13 +163,20 @@
 .symptoms-list {
   position: relative;
   padding-left: 40px;
+  font-family: $book-fonts;
+  font-size: 24px;
 }
 
 .wrapper-info {
   display: flex;
+  .manifestations{
+    font-family: $primary-fonts;
+    font-weight: 500;
+  }
 }
 
 .symptoms-list__item,
 .causes-list__item {
   list-style-type: disc;
+
 }

@@ -5,37 +5,39 @@ html {
 body {
   position: relative;
   background: $white;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 2500px;
+  margin: auto;
+  padding-bottom: 180px;
+  overflow: hidden;
 
   &:before,
   &:after {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
-    width: 15%;
     bottom: 0;
+    width: 15%;
     z-index: 1;
   }
 
   &:before {
     left: 0;
     background: rgb(197, 237, 253);
-    background: linear-gradient(90deg, rgba(197, 237, 253, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(197, 237, 253, 1) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:after {
     right: 0;
     background: rgb(197, 237, 253);
-    background: linear-gradient(270deg, rgba(197, 237, 253, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(270deg, rgba(197, 237, 253, 1) 0%, rgba(255, 255, 255, 0) 100%);
   }
-}
-
-.wrapper {
-  max-width: 2500px;
-  margin: auto;
-  position: relative;
-  padding-bottom: 180px;
-  overflow: hidden;
-  z-index: 2;
+  & > * {
+    z-index: 2;
+  }
 }
 
 .container {
