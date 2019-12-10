@@ -48,3 +48,21 @@
       z-index: 1;
     }
   }
+
+  @include respond-to($lg) {
+    .card-question {
+      width: 100%;
+      line-height: 1.5;
+      padding-bottom: 40px;
+      &__title {
+        font-size: 47px;
+        margin-bottom: 30px;
+        .img-logo-title {
+          display: none;
+        }
+      }
+      &__text {
+        line-height: inherit;
+      }
+    }
+  }
