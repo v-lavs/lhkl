@@ -9,35 +9,35 @@
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
 
-  &.decor:before {
+  &:before {
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 0;
   }
+
+  &__slogan {
+    width: 50%;
+    font-family: $helper-fonts;
+    font-weight: 600;
+    color: $primary-color;
+    float: right;
+    padding-left: 83px;
+    margin-bottom: 39px;
+  }
+
+  &__img {
+    max-width: 450px;
+    margin-bottom: 11px;
+  }
+  &__content-wrap {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 80px;
+  }
 }
 
-.img--banner {
-  max-width: 450px;
-  margin-bottom: 11px;
-}
-
-.slogan {
-  width: 50%;
-  font-family: $helper-fonts;
-  font-weight: 600;
-  color: $primary-color;
-  float: right;
-  padding-left: 83px;
-  margin-bottom: 39px;
-}
-
-.wrap-img-slogan {
-  width: 50%;
-  overflow: hidden;
-  float: left;
-  margin-bottom: 80px;
-}
 
 .advantages {
   width: 50%;
@@ -58,7 +58,7 @@
   margin-bottom: 30px;
   font-family: $secondary-fonts;
   min-height: 100px;
-  &:before{
+  &:before {
     position: absolute;
     content: '';
     width: 47px;

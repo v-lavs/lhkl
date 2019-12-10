@@ -1,6 +1,6 @@
 .burger {
   display: none;
-  width: 75px;
+  width: 30px;
   height: 28px;
   background-color: transparent;
   border: none;
@@ -10,8 +10,8 @@
     display: block;
     width: 100%;
     background-color: #999999;
-    height: 4px;
-    margin-bottom: 4px;
+    height: 3px;
+    margin-bottom: 5px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -57,6 +57,11 @@
 .main-logo{
   display: block;
   width: 280px;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .logo-link{
