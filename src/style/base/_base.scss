@@ -30,8 +30,10 @@ body {
 }
 
 .wrapper {
+  max-width: 2500px;
+  margin: auto;
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 180px;
   overflow: hidden;
   z-index: 2;
 }
@@ -120,8 +122,7 @@ body {
   right: 0;
   background-color: $primary-color;
   color: #fff;
-  padding: 20px 0;
-  max-height: 15%;
+  padding: 15px 0;
   width: 100%;
   z-index: 1000;
 }

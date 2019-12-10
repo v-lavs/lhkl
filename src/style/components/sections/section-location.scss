@@ -20,6 +20,12 @@
 
   .wrap-map {
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 50vw;
+      height: auto;
+    }
   }
 
   .content-box {

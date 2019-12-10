@@ -36,13 +36,13 @@ $(document).ready(function () {
     /**
      * OWL-CAROUSEL SCRIPT
      **/
-     jQuery("#slider-carousel").owlCarousel({
+    jQuery("#slider-carousel").owlCarousel({
         items: 3,
         pagination: false,
-         dots: false,
+        dots: false,
         nav: true,
-        slideSpeed: 5000,
-        margin:0,
+        slideSpeed: 2000,
+        margin: 0,
         responsive: {
             0: {
                 items: 1,
@@ -54,16 +54,16 @@ $(document).ready(function () {
         }
     });
 
-   jQuery("#slider-carousel1").owlCarousel({
+    jQuery("#slider-carousel1").owlCarousel({
         items: 1,
-       autoHeight: false,
+        autoHeight: false,
         pagination: false,
         dots: true,
         autoplay: true,
         autoplayTimeout: 8000,
         slideSpeed: 5000,
         stopOnHover: true,
-        margin:0,
+        margin: 0,
 
     });
 
