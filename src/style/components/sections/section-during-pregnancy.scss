@@ -163,6 +163,7 @@
 
 @include respond-to($lg) {
   .section-during-pregnancy {
+    padding-bottom: 180px;
     .heading-section {
       &:before {
         left: 0;
@@ -193,7 +194,7 @@
           color: inherit;
         }
         .bg-benefit{
-          margin: 0 auto;
+          margin: 0 auto 20px;
           width: 205px;
           height: 205px;
         }
@@ -201,9 +202,26 @@
     }
     .properties {
       padding-top: 55px;
+      .wrap-icon{
+        width: 189px;
+        height: 189px;
+      }
     }
     .box-properties {
-      font-size: 32px;
+      font-size: 35px;
+    }
+    .property-1,
+    .property-2{
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+    .property-1:after{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 86px 0 86px 47px;
+      border-color: transparent transparent transparent #fff;
+      right: -46px;
     }
     .benefit-list {
       padding-top: 100px;
@@ -218,5 +236,6 @@
       margin-bottom: 130px;
     }
   }
+
 }
 
