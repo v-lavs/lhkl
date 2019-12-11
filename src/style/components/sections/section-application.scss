@@ -29,12 +29,10 @@
 }
 
 .age-list {
-  padding-top: 25px;
 
   &__item {
     position: relative;
-
-    padding-top: 20px;
+    margin-bottom: 20px;
     padding-bottom: 30px;
   }
 
@@ -76,6 +74,7 @@
 
 .reception-list,
 .age-list {
+  padding-top: 40px;
   width: 30%;
 
   &__item {
@@ -113,7 +112,6 @@
 .reception-list {
   flex-grow: 1;
   padding-left: 15px;
-  padding-top: 40px;
   padding-bottom: 25px;
 
   &__item {

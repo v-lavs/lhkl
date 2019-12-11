@@ -60,11 +60,11 @@
   }
 }
 
-@include respond-to($md) {
+@include respond-to($lg) {
   .section-works {
     padding-top: 180px;
     .heading-section {
-      max-width: 250px;
+      max-width: 50%;
       margin-bottom: 50px;
       padding-bottom: 40px;
     }
@@ -73,16 +73,11 @@
       & > .zoom-img {
         position: absolute;
         top: 0;
-        -webkit-transform: translateY(-100%) rotate(-10deg);
-        -moz-transform: translateY(-100%) rotate(-10deg);
-        -ms-transform: translateY(-100%) rotate(-10deg);
-        -o-transform: translateY(-100%) rotate(-10deg);
-        transform: translateY(-100%) rotate(-10deg);
+        left: 45%;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
         float: none;
-        width: 60vw;
-        max-width: 595px;
-        padding-top: 51%;
-        margin-left: 280px;
+        width: 50%;
         img {
           width: 100%;
         }
