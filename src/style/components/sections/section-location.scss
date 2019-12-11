@@ -181,6 +181,9 @@
 }
 @include respond-to($xs) {
  .section-location {
+   .container{
+     padding-top: 100px;
+   }
    .btn-main {
      font-size: 13px;
      max-width: 160px;
