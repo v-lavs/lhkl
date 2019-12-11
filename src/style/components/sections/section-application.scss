@@ -202,6 +202,7 @@
 
 @include respond-to($lg) {
   .section-application {
+    padding-bottom: 150px;
     .container {
       padding-left: 0;
       padding-right: 0;
@@ -256,6 +257,10 @@
 
     .age-list {
       width: 100%;
+
+      br {
+        display: none;
+      }
 
       .wrap-icon-bg {
         width: 15%;
@@ -317,6 +322,10 @@
         bottom: -2px;
         left: -8px;
       }
+    }
+
+    .equally {
+      font-size: 34px;
     }
   }
 }

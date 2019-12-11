@@ -180,13 +180,22 @@
     }
     .benefit-list {
       justify-content: center;
+      margin-left: -45px;
+      margin-right: -45px;
       &__item {
         margin-bottom: 70px;
-        max-width: 285px;
+        width: 33%;
         font-size: 32px;
         color: #1694d4;
+        font-family: $primary-fonts;
+        font-weight: 500;
         .text {
           color: inherit;
+        }
+        .bg-benefit{
+          margin: 0 auto;
+          width: 205px;
+          height: 205px;
         }
       }
     }
