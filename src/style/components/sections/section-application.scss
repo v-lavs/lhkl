@@ -4,6 +4,7 @@
   font-size: 24px;
   line-height: 1.1;
   padding-top: 58px;
+
   .slogan-application {
     color: $white;
     text-transform: uppercase;
@@ -67,6 +68,7 @@
   align-self: center;
   width: 40%;
   padding: 0 40px;
+
   .img {
     margin-bottom: 40px;
   }
@@ -80,6 +82,7 @@
   &__item {
     display: flex;
     align-items: center;
+
     &:last-child {
       &.decor:before {
         background: transparent;
@@ -194,24 +197,97 @@
 
 @include respond-to($lg) {
   .section-application {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .wrap-info-img {
       display: none;
     }
+
     .container {
       flex-wrap: nowrap;
     }
+
     .reception-list {
       padding-left: 0;
+      border-width: 3px;
+      border-style: solid;
+      border-right: 0;
+      border-image: radial-gradient(white, rgba(17, 124, 207, 0)) 1 100%;
+
       .card-text {
         display: none;
       }
     }
+
+    .reception-list,
+    .age-list {
+      padding-top: 0;
+
+      &__item {
+        padding-top: 27px;
+        padding-bottom: 33px;
+      }
+    }
+
     .age-list {
       width: 100%;
+
+      .wrap-icon-bg {
+        width: 15%;
+        background-position: 0 center;
+      }
     }
+
+    .reception-bg-img {
+      margin-left: auto;
+    }
+
+    .age {
+      font-size: 33px;
+    }
+
     .age-list__item,
     .reception-list__item {
       height: 174px;
+      border-width: 2px;
+      border-style: solid;
+      margin-bottom: 0;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .age-list__item {
+      border-top: 0;
+      border-image: linear-gradient(to left, white, rgba(17, 124, 207, 0)) 100% 1;
+    }
+
+    .reception-list__item {
+      position: relative;
+      border-top: 0;
+      border-image: linear-gradient(to right, white, rgba(17, 124, 207, 0)) 100% 1;
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: $white;
+        border-radius: 50%;
+        bottom: -2px;
+        left: -8px;
+      }
     }
   }
 }
