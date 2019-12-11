@@ -230,7 +230,6 @@
         margin-bottom: 40px;
         line-height: 1.08;
       }
-
     }
 
     .reception-list {
@@ -238,6 +237,7 @@
       border-width: 3px;
       border-style: solid;
       border-right: 0;
+      border-top: 0;
       border-image: radial-gradient(white, rgba(17, 124, 207, 0)) 1 100%;
 
       .card-text {
@@ -257,11 +257,9 @@
 
     .age-list {
       width: 100%;
-
       br {
         display: none;
       }
-
       .wrap-icon-bg {
         width: 15%;
         background-position: 0 center;
@@ -293,9 +291,13 @@
       &:last-child {
         border: none;
       }
+      &:before {
+        display: none;
+      }
     }
 
     .age-list__item {
+      padding-left: 30px;
       border-top: 0;
       border-image: linear-gradient(to left, white, rgba(17, 124, 207, 0)) 100% 1;
     }
@@ -319,8 +321,10 @@
         height: 10px;
         background: $white;
         border-radius: 50%;
-        bottom: -2px;
-        left: -8px;
+        bottom: 0px;
+        left: -3px;
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
       }
     }
 

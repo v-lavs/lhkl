@@ -126,13 +126,13 @@ section {
 }
 
 .disclaimer {
+  background-color: $primary-color;
+  color: #fff;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: $primary-color;
-  color: #fff;
-  padding: 15px 0;
+  padding: 15px 0 10px;
   width: 100%;
   z-index: 1000;
 }
@@ -209,14 +209,30 @@ section {
   background-image: url(../assets/img/icons/bootle.svg);
 }
 
+.overflow {
+  overflow: hidden;
+}
+
+@media all and (max-width: 1460px){
+  .container {
+    max-width: 1280px;
+  }
+}
+
 @include respond-to($xl) {
   .container {
     max-width: 1200px;
   }
 }
 
+@include respond-to($xl) {
+  html {
+    font-size: 22px;
+  }
+}
+
 @include respond-to($lg) {
-  body {
+  html {
     font-size: 40px;
   }
   .container {
@@ -227,7 +243,7 @@ section {
   .heading-section {
     padding-bottom: 50px;
     margin-bottom: 50px;
-    .title{
+    .title {
       font-size: 60px;
     }
   }

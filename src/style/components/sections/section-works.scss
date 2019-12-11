@@ -61,9 +61,9 @@
   .text-bg-separator {
     background-image: url(../assets/img/drop.png);
     background-position: 0 0;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%;
-    background-repeat: repeat-x;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 90px;
     margin-bottom: 20px;
   }
@@ -76,10 +76,7 @@
 
 @include respond-to($lg) {
   .section-works {
-    padding-top: 180px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 150px;
+    padding: 180px 100px 150px 100px;
 
     .heading-section {
       max-width: 50%;
@@ -97,7 +94,7 @@
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%);
         float: none;
-        width: 80%;
+        width: 65%;
 
         img {
           width: 100%;
@@ -134,6 +131,13 @@
         border: 1px solid #dcdcdc;
       }
     }
+  }
+}
+
+@include respond-to($md) {
+  .section-works {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

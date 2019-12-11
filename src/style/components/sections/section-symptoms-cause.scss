@@ -40,7 +40,13 @@
   padding-right: 75px;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-
+  &-list {
+    padding-left: 20px;
+    margin-bottom: 50px;
+    &__item {
+      list-style: disc;
+    }
+  }
   &__img {
     display: block;
     width: 100%;
@@ -162,10 +168,10 @@
   &-7 {
     background-image: url(../assets/img/jivit1.png);
   }
-
 }
 
 .bg-intestine {
+  position: relative;
   background-image: url(../assets/img/intestine.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -174,6 +180,16 @@
   margin-right: 20px;
   width: 140px;
   height: 128px;
+ &:before {
+   content: '';
+   position: absolute;
+   right: -20px;
+   bottom: 0;
+   top: 0;
+   height: 100px;
+   width: 1px;
+   border-right: 1px solid $purple;
+ }
 }
 
 .symptoms {
@@ -210,6 +226,13 @@
   list-style-type: disc;
 }
 
+@media screen and (max-width: 1460px){
+  .symptoms {
+    width: 50%;
+    padding-left: 50px;
+  }
+}
+
 @include respond-to($lg) {
   .section-symptoms-cause {
     .heading-section {
@@ -234,6 +257,7 @@
       transform: none;
       padding: 0;
       width: 100%;
+      margin-bottom: 200px;
 
       &__img {
         display: block;
@@ -246,6 +270,7 @@
       margin-bottom: 70px;
       &__item {
         position: relative;
+        list-style: none;
         &:before {
           position: absolute;
           content: '';
@@ -269,13 +294,14 @@
       width: auto;
       margin: auto;
       &__item{
+        max-width: 325px;
 
         &:nth-of-type(odd) {
           right: 83%;
         }
 
         &:nth-of-type(even) {
-          right: -45%;
+          right: -71%;
         }
 
         &:nth-of-type(1) {
@@ -304,6 +330,10 @@
 
         &:nth-of-type(7) {
           top: 82%;
+        }
+
+        .text {
+          font-size: inherit;
         }
       }
     }
