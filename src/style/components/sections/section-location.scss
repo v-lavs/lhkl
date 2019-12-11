@@ -1,6 +1,7 @@
 .section-location {
   line-height: 1.42;
   font-family: $book-fonts;
+
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +31,7 @@
     transform: translateX(-100%);
     display: flex;
     justify-content: flex-end;
+
     img {
       width: 50vw;
       height: auto;
@@ -106,31 +108,38 @@
 
 @include respond-to($lg) {
   .section-location {
-    .heading-section{
+    .heading-section {
       margin-bottom: 100px;
-      &.decor:before{
+
+      &.decor:before {
         left: 35%;
         right: 35%;
       }
-      .title{
+
+      .title {
         text-align: center;
       }
     }
+
     .content-box {
       width: 100%;
+
       p {
         max-width: none;
       }
     }
+
     .wrap-map {
       position: static;
       -webkit-transform: none;
       transform: none;
       margin-bottom: 175px;
+
       .img {
         width: 100vw;
       }
     }
+
     .btn-main {
       max-width: 500px;
       width: 100%;
@@ -142,10 +151,34 @@
       font-size: 42px;
       text-align: center;
       height: 130px;
+
       span,
       &:after {
         display: none;
       }
     }
+  }
+}
+
+@include respond-to($xs) {
+  .section-location {
+    .container {
+      padding-bottom: 0;
+    }
+
+    .btn-main {
+      margin-top: 32px;
+      margin-bottom: 37px;
+      font-size: 17px;
+      border: 2px solid;
+      padding: 17px;
+      width: 65%;
+      height: auto;
+    }
+  }
+  .literature {
+    font-size: 7px;
+    line-height: 1.5;
+    margin-bottom: 25px;
   }
 }

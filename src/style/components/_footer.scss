@@ -20,3 +20,49 @@
   }
 }
 
+@include respond-to($xs) {
+  .top-row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .disclaimer {
+    padding-top: 0;
+    padding-bottom: 10px;
+    .container{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .footer__text-img {
+    height: 8vh;
+  }
+  .bottom-row {
+    justify-content: space-between;
+    padding-top: 0;
+
+    span,
+    .logo-arterium,
+    .link-social{
+      display: inline-block;
+    }
+    span{
+      opacity: .6;
+      font-size: 5px;
+      line-height: 2.5;
+    }
+  }
+  .logo-profi{
+    margin-right: auto;
+    width: 20px;
+    height: 23px;
+  }
+  .logo-arterium{
+    width: 80px;
+    height: 16px;
+
+  }
+  .link-social{
+    width: 18px;
+    height: 18px;
+  }
+}
