@@ -86,8 +86,12 @@
     width: 100%;
     line-height: 1.5;
     padding-bottom: 40px;
-    padding-left: 25px;
+    padding-left: 0;
     border-right: none;
+    &:first-child:before {
+      display: none;
+    }
+
     &:last-child:after{
       background: none;
     }
@@ -112,6 +116,30 @@
 
     &__text {
       line-height: inherit;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .card-question {
+    &__title {
+      font-size: 38px;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .card-question {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .card-question {
+    &__title {
+      font-size: 15px;
     }
   }
 }

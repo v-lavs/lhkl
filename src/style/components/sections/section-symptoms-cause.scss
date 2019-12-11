@@ -287,7 +287,6 @@
       }
     }
 
-
     .reason-list {
       position: relative;
       height: auto;
@@ -337,6 +336,7 @@
         }
       }
     }
+
     .scheme__img_desktop{
       display: none;
     }
@@ -369,6 +369,12 @@
 }
 
 @include respond-to($md) {
+  .section-symptoms-cause {
+    .wrapper-info {
+      padding-left: 0;
+    }
+  }
+
   .symptoms {
     .scheme {
       width: 70%;
