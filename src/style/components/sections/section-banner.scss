@@ -119,19 +119,22 @@
     .advantages {
       max-width: 800px;
       margin: 0 auto;
-      .advantages__decor:before {
-        display: block;
-      border:20px solid $white;
-        background-color: $white;
-        top: 0;
-        -webkit-transform: translateY(-90%);
-        transform: translateY(-90%);
-        
-      }
+
       &__card {
         margin-top: 90px;
         &.advantages__decor:before {
-          display: none;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          overflow: hidden;
+          width: 90px;
+          height: 90px;
+          border: 10px solid $white;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
         }
       }
     }
