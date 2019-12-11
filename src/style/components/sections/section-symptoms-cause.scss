@@ -238,6 +238,7 @@
     }
 
     .scheme-list {
+      padding-top: 50px;
       padding-left: 40px;
       margin-bottom: 70px;
       &__item {
@@ -270,7 +271,6 @@
     }
 
     .wrapper-info {
-      display: none;
       padding-left: 60px;
     }
 
@@ -282,5 +282,13 @@
     .symptoms-list {
       font-size: 40px;
     }
+  }
+  .substrate{
+    width: 190px;
+    height: 190px;
+  }
+  .wrap-reason{
+    height: 144px;
+    width: 144px;
   }
 }
