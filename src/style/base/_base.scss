@@ -35,6 +35,7 @@ body {
     background: rgb(197, 237, 253);
     background: linear-gradient(270deg, rgba(197, 237, 253, 1) 0%, rgba(255, 255, 255, 0) 100%);
   }
+
   & > * {
     z-index: 2;
   }
@@ -60,15 +61,19 @@ body {
   height: auto;
 }
 
+section {
+  position: relative;
+}
+
 .color-blue {
   color: $primary-color;
 }
 
-.color-purple{
+.color-purple {
   color: $purple;
 }
 
-.align-left{
+.align-left {
   text-align: left;
 }
 
@@ -113,6 +118,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 20px;
   margin: 0 auto 20px;
+
   &.decor:before {
     left: 42%;
     right: 42%;
@@ -138,13 +144,14 @@ body {
   height: 8vh;
 }
 
-.benefit-list{
+.benefit-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 130px;
-  &__item{
+
+  &__item {
     width: 17%;
     text-align: center;
     font-size: 27px;
@@ -152,7 +159,8 @@ body {
     font-weight: 500;
     color: $primary-color;
     padding: 0 10px 10px;
-    sup{
+
+    sup {
       font-size: 16px;
     }
 
@@ -167,30 +175,37 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  &_middle{
+
+  &_middle {
     height: 140px;
   }
 }
-.bg-benefit-1{
+
+.bg-benefit-1 {
   background-image: url(../assets/img/icons/efektivno-01.svg);
 }
-.bg-benefit-2{
+
+.bg-benefit-2 {
   background-image: url(../assets/img/icons/ne-viklikae-01.svg);
 }
-.bg-benefit-3{
+
+.bg-benefit-3 {
   background-image: url(../assets/img/icons/dozvoleniy-01.svg);
 }
-.bg-benefit-4{
+
+.bg-benefit-4 {
   background-image: url(../assets/img/icons/vidnovlennya-01.svg);
 }
-.bg-benefit-5{
+
+.bg-benefit-5 {
   background-image: url(../assets/img/icons/brain-01.svg);
 }
 
-.bg-benefit-6{
+.bg-benefit-6 {
   background-image: url(../assets/img/icons/shield-01.svg);
 }
-.bg-benefit-7{
+
+.bg-benefit-7 {
   background-image: url(../assets/img/icons/bootle.svg);
 }
 

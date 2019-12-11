@@ -44,10 +44,11 @@ $(document).ready(function () {
         nav: true,
         slideSpeed: 2000,
         margin: 0,
+
         responsive: {
             0: {
                 items: 1,
-                stagePadding: 150,
+                 stagePadding: 150,
             },
             1190: {
                 items: 3,
