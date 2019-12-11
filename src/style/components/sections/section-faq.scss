@@ -7,9 +7,11 @@
     text-align: center;
     margin: 0 auto 80px;
   }
+
   .heading-section {
     padding-bottom: 20px;
     margin: 0 auto 25px;
+
     &:before {
       left: 36%;
       right: 36%;
@@ -28,6 +30,7 @@
   width: 30%;
   padding: 55px 25px 35px 94px;
   border-right: 1px solid #d8d9d9;
+
   &__title {
     position: relative;
     color: $primary-color;
@@ -35,15 +38,18 @@
     font-weight: 500;
     line-height: 1.1;
     margin-bottom: 25px;
+
     img {
       -webkit-transform: translate(-60px, -10px);
       transform: translate(-60px, -10px);
     }
   }
+
   &__text {
     font-family: $book-fonts;
     line-height: 1.1;
   }
+
   .img-logo-title {
     position: absolute;
     display: block;
@@ -56,17 +62,44 @@
 }
 
 @include respond-to($lg) {
+  .section-faq {
+    .heading-section {
+      margin-bottom: 40px;
+    }
+
+    .sub-title {
+      font-size: 30px;
+      max-width: 695px;
+    }
+  }
   .card-question {
     width: 100%;
     line-height: 1.5;
     padding-bottom: 40px;
+    padding-left: 25px;
+    border-right: none;
+    &:last-child:after{
+      background: none;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to left, transparent 50%,#d8d9d9 50%), linear-gradient(to left,#d8d9d9, #ffffff);
+      background-size: 40px 8px, 0% 8px;
+    }
     &__title {
       font-size: 47px;
       margin-bottom: 30px;
+
       .img-logo-title {
         display: none;
       }
     }
+
     &__text {
       line-height: inherit;
     }
