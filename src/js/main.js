@@ -47,12 +47,48 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                 stagePadding: 150,
+                stagePadding: 150,
             },
             1190: {
                 items: 3,
             }
         }
+    });
+
+    var planks = $('#slider-carousel1');
+    var clonedContent = planks.children().clone(true, true);
+
+    function handleResponsiveSlides() {
+        var isInit = planks.data('owl.carousel');
+        if ($(window).width() < 1190) {
+            if (!planks.hasClass('owl-carousel')) {
+                planks.addClass('owl-carousel');
+                planks.owlCarousel({
+                    items: 1,
+                    autoHeight: false,
+                    pagination: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplayTimeout: 6000,
+                    slideSpeed: 1000,
+                    stopOnHover: true,
+                    margin: 20
+                })
+            }
+        } else {
+            if (isInit) {
+                planks.owlCarousel('destroy');
+
+                planks.removeClass('owl-carousel owl-loaded owl-drag');
+                planks.empty().append(clonedContent);
+            }
+        }
+    }
+
+    handleResponsiveSlides();
+
+    $(window).on('resize', function () {
+        handleResponsiveSlides()
     });
 
     // jQuery("#slider-carousel1").owlCarousel({
