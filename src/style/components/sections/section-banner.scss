@@ -61,6 +61,7 @@
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
     line-height: 1.1;
     margin-bottom: 30px;
+    color: #4e4e4e;
     font-family: $secondary-fonts;
     min-height: 100px;
   }
@@ -121,20 +122,25 @@
       margin: 0 auto;
 
       &__card {
+        max-width: inherit;
+        padding: 16px 67px 20px 78px;
         margin-top: 90px;
+        text-align: center;
+        font-size: 45px;
         &.advantages__decor:before {
           position: absolute;
           top: 0;
           left: 50%;
           overflow: hidden;
-          width: 90px;
-          height: 90px;
-          border: 10px solid $white;
+          background-color: $white;
+          width: 100px;
+          height: 100px;
+          border: 20px solid $white;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
-          -webkit-transform: translate(-50%, -90%);
-          transform: translate(-50%, -90%);
+          -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
         }
       }
     }

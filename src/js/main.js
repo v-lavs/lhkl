@@ -44,7 +44,6 @@ $(document).ready(function () {
         nav: true,
         slideSpeed: 2000,
         margin: 0,
-
         responsive: {
             0: {
                 items: 1,

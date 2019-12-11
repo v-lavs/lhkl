@@ -41,9 +41,10 @@
     font-family: $secondary-fonts;
     font-weight: 700;
     line-height: 1.4;
-    padding: 28px 83px 24px 28px;
+    padding: 28px 105px 24px 28px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
-    max-width: 435px;
+    //max-width: 435px;
+    width: 90%;
     cursor: pointer;
 
     &:after {
@@ -79,9 +80,16 @@
 
 @include respond-to($lg) {
   .benefits-section {
+    padding-top: 210px;
     background-size: 100%;
   }
   .section-features {
+    .container{
+      padding: 0;
+    }
+    .action-info{
+      width: inherit;
+    }
     .benefit-list {
       justify-content: center;
     }
@@ -94,7 +102,7 @@
       }
       &:nth-child(4),
       &:nth-child(5) {
-        margin-top: 0px;
+        margin-top: 0;
       }
     }
   }
