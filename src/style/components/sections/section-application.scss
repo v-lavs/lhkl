@@ -141,7 +141,7 @@
   position: relative;
   width: 106px;
   height: 106px;
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 38px;
@@ -227,8 +227,8 @@
       padding-top: 0;
 
       &__item {
-        padding-top: 27px;
-        padding-bottom: 33px;
+        padding-top: 22px;
+        padding-bottom: 22px;
       }
     }
 
@@ -243,6 +243,12 @@
 
     .reception-bg-img {
       margin-left: auto;
+      width: 114px;
+      &:before{
+        background: transparent;
+        color: $white;
+        font-size: 27px;
+      }
     }
 
     .age {
