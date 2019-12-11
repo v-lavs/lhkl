@@ -271,6 +271,9 @@ section {
       font-size: 40px;
     }
   }
+  .footer__text-img {
+    height: 8vh;
+  }
 }
 
 @include respond-to($xs) {
