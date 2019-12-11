@@ -80,8 +80,6 @@
 
     .heading-section {
       max-width: 50%;
-      margin-bottom: 50px;
-      padding-bottom: 40px;
     }
 
     .text {
@@ -138,6 +136,44 @@
   .section-works {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 0;
+  }
+}
+
+@include respond-to($sm) {
+  .section-works {
+    padding-left: 0;
+    padding-right: 0;
+    .superiority {
+      font-size: 20px;
+    }
+    .btn {
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 8px;
+    }
+    .text p {
+      margin-bottom: 15px;
+    }
+    .text-bg-separator {
+      height: 40px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .section-works {
+    .heading-section {
+      max-width: 140px;
+    }
+    .superiority {
+      font-size: 12px;
+    }
+    .btn {
+      padding: 10px;
+      font-size: 11px;
+      margin-bottom: 20px;
+    }
   }
 }
 

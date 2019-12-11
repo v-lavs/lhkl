@@ -116,3 +116,24 @@
     z-index: 1;
   }
 }
+
+
+@include respond-to($sm) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .main-logo {
+    max-width: 120px;
+  }
+  .logo-link {
+    max-width: 60px;
+  }
+  .burger {
+    width: 24px;
+    .line {
+      margin-bottom: 5px;
+    }
+  }
+}
+

@@ -367,3 +367,22 @@
     width: 144px;
   }
 }
+
+@include respond-to($md) {
+  .symptoms {
+    .scheme {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .reason-list__item {
+      max-width: 240px;
+      &:nth-of-type(even) {
+        right: -53%;
+      }
+      &:nth-of-type(odd) {
+        right: 71%;
+      }
+    }
+  }
+}
