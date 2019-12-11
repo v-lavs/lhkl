@@ -5,64 +5,70 @@
     font-size: 21px;
     line-height: 1.18;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 80px;
   }
-  .heading-section{
+  .heading-section {
     padding-bottom: 20px;
     margin: 0 auto 25px;
-    &.decor:before{
+    &:before {
       left: 36%;
       right: 36%;
     }
   }
 }
-  .container-faq {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -3px;
-  }
 
-  .card-question {
+.container-faq {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3px;
+}
+
+.card-question {
+  position: relative;
+  width: 30%;
+  padding: 55px 25px 35px 94px;
+  border-right: 1px solid #d8d9d9;
+  &__title {
     position: relative;
-    width: 30%;
-    padding: 55px 25px 35px 94px;
-    border-right: 1px solid #d8d9d9;
+    color: $primary-color;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    img {
+      -webkit-transform: translate(-60px, -10px);
+      transform: translate(-60px, -10px);
+    }
+  }
+  &__text {
+    font-family: $book-fonts;
+    line-height: 1.1;
+  }
+  .img-logo-title {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+@include respond-to($lg) {
+  .card-question {
+    width: 100%;
+    line-height: 1.5;
+    padding-bottom: 40px;
     &__title {
-      color: $primary-color;
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 1.1;
-      margin-bottom: 25px;
+      font-size: 47px;
+      margin-bottom: 30px;
+      .img-logo-title {
+        display: none;
+      }
     }
     &__text {
-      font-family: $book-fonts;
-      line-height: 1.1;
-    }
-    .img-logo-title {
-      position: absolute;
-      display: block;
-      width: 34px;
-      height: 34px;
-      left: 9%;
-      top: 15%;
-      z-index: 1;
+      line-height: inherit;
     }
   }
-
-  @include respond-to($lg) {
-    .card-question {
-      width: 100%;
-      line-height: 1.5;
-      padding-bottom: 40px;
-      &__title {
-        font-size: 47px;
-        margin-bottom: 30px;
-        .img-logo-title {
-          display: none;
-        }
-      }
-      &__text {
-        line-height: inherit;
-      }
-    }
-  }
+}
