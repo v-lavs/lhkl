@@ -27,6 +27,10 @@
     flex-wrap: wrap;
     padding-bottom: 35px;
   }
+
+  .text-mobile {
+    display: none;
+  }
 }
 
 .age-list {
@@ -195,6 +199,7 @@
   background-image: url(../assets/img/4.png);
 }
 
+
 @include respond-to($lg) {
   .section-application {
     .container {
@@ -208,6 +213,22 @@
 
     .container {
       flex-wrap: nowrap;
+    }
+
+    .text-mobile {
+      display: block;
+      padding-left: 90px;
+      padding-right: 70px;
+
+      &__item {
+        list-style-type: decimal;
+        font-weight: 500;
+        font-size: 37px;
+        color: $primary-color;
+        margin-bottom: 40px;
+        line-height: 1.08;
+      }
+
     }
 
     .reception-list {
@@ -244,7 +265,8 @@
     .reception-bg-img {
       margin-left: auto;
       width: 114px;
-      &:before{
+
+      &:before {
         background: transparent;
         color: $white;
         font-size: 27px;
