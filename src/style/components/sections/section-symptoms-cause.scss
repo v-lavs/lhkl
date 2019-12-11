@@ -239,6 +239,7 @@
 
     .scheme-list {
       padding-left: 40px;
+      margin-bottom: 70px;
       &__item {
         position: relative;
         &:before {
@@ -269,6 +270,7 @@
     }
 
     .wrapper-info {
+      display: none;
       padding-left: 60px;
     }
 
