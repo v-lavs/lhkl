@@ -76,3 +76,26 @@
     background-image: linear-gradient(to right, #00db83, #02cd72, #02bf62, #02b251, #00a441);
   }
 }
+
+@include respond-to($lg) {
+  .benefits-section {
+    background-size: 100%;
+  }
+  .section-features {
+    .benefit-list {
+      justify-content: center;
+    }
+    .benefit-list__item {
+      padding: 25px 20px;
+      width: 33.33%;
+      font-size: 33px;
+      &:nth-child(3) {
+        margin-top: -140px;
+      }
+      &:nth-child(4),
+      &:nth-child(5) {
+        margin-top: 0px;
+      }
+    }
+  }
+}
