@@ -1,4 +1,4 @@
-.section-works{
+.section-works {
   margin-bottom: 120px;
   color: #373737;
   font-family: $book-fonts;
@@ -7,16 +7,19 @@
     display: inline-block;
     padding-bottom: 25px;
     margin-bottom: 25px;
+
     &:before {
       left: auto;
       right: auto;
       width: 80%;
     }
   }
-  .text{
+
+  .text {
     & > * {
       overflow: hidden;
     }
+
     p {
       margin-bottom: 45px;
     }
@@ -29,6 +32,7 @@
       overflow: visible;
       margin-left: 40px;
       margin-top: -40px;
+
       img {
         position: absolute;
         top: 0;
@@ -39,19 +43,22 @@
       }
     }
   }
-.btn {
-  display: none;
-}
-  .text-content{
+
+  .btn {
+    display: none;
+  }
+
+  .text-content {
     padding-left: 150px;
     color: #373737;
     font-family: $book-fonts;
-    .text{
+
+    .text {
       margin-bottom: 45px;
     }
   }
 
-  .text-bg-separator{
+  .text-bg-separator {
     background-image: url(../assets/img/drop.png);
     background-position: 0 0;
     -webkit-background-size: auto 100%;
@@ -60,6 +67,7 @@
     height: 90px;
     margin-bottom: 20px;
   }
+
   .superiority {
     font-family: $secondary-fonts;
     font-size: 30px;
@@ -72,13 +80,16 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 150px;
+
     .heading-section {
       max-width: 50%;
       margin-bottom: 50px;
       padding-bottom: 40px;
     }
+
     .text {
       position: relative;
+
       & > .zoom-img {
         position: absolute;
         top: 0;
@@ -87,19 +98,23 @@
         transform: translateY(-100%);
         float: none;
         width: 80%;
+
         img {
           width: 100%;
         }
       }
     }
-    .paragraph-top{
+
+    .paragraph-top {
       max-width: 675px;
     }
-    .superiority{
+
+    .superiority {
       font-size: 34px;
       font-weight: 700;
     }
-    .btn{
+
+    .btn {
       display: block;
       font-size: 34px;
       color: #797979;
@@ -109,15 +124,16 @@
       line-height: 1.1;
       border-radius: 20px;
       padding: 30px 50px 34px;
-      border: transparent;
+      border: 1px solid transparent;
       box-shadow: 5px 10px 46px rgba(0, 0, 0, 0.1);
       transition: .5s;
       margin-bottom: 70px;
+
       &:hover,
-      &:focus{
-        border:1px solid #dcdcdc;
+      &:focus {
+        border: 1px solid #dcdcdc;
       }
-      }
+    }
   }
 }
 

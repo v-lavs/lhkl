@@ -40,6 +40,7 @@
   padding-right: 75px;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
+
   &__img {
     display: block;
     width: 100%;
@@ -48,7 +49,7 @@
 }
 
 
-.reason-list{
+.reason-list {
   position: absolute;
   height: 1315px;
   width: 760px;
@@ -57,42 +58,52 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  &__item{
+
+  &__item {
     position: absolute;
     max-width: 200px;
     width: 100%;
     padding: 5px;
     text-align: center;
     color: $purple;
+
     &:nth-of-type(odd) {
       right: 55%;
     }
+
     &:nth-of-type(even) {
       right: 11%;
     }
-    &:nth-of-type(1){
+
+    &:nth-of-type(1) {
       top: 12%;
     }
-    &:nth-of-type(2){
+
+    &:nth-of-type(2) {
       top: 21%;
     }
-    &:nth-of-type(3){
+
+    &:nth-of-type(3) {
       top: 30%;
     }
-    &:nth-of-type(4){
+
+    &:nth-of-type(4) {
       top: 39%;
     }
-    &:nth-of-type(5){
+
+    &:nth-of-type(5) {
       top: 47%;
     }
-    &:nth-of-type(6){
+
+    &:nth-of-type(6) {
       top: 55%;
     }
-    &:nth-of-type(7){
+
+    &:nth-of-type(7) {
       top: 64%;
     }
 
-    .text{
+    .text {
       font-family: $secondary-fonts;
       font-size: 22px;
       line-height: 0.8;
@@ -101,7 +112,8 @@
     }
   }
 }
-.substrate{
+
+.substrate {
   display: flex;
   width: 114px;
   height: 114px;
@@ -110,7 +122,7 @@
   margin: 0 auto 10px;
 }
 
-.wrap-reason{
+.wrap-reason {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -119,25 +131,32 @@
   border-radius: 50%;
   margin: auto;
   box-shadow: 5px 4px 4px #774d96;
-  &-1{
+
+  &-1 {
     background-image: url(../assets/img/harchyvannya1.png);
   }
-  &-2{
+
+  &-2 {
     background-image: url(../assets/img/2tabletki.png);
   }
-  &-3{
+
+  &-3 {
     background-image: url(../assets/img/vagitnist1.png);
   }
-  &-4{
+
+  &-4 {
     background-image: url(../assets/img/sidinnya1.png);
   }
-  &-5{
+
+  &-5 {
     background-image: url(../assets/img/valiza1.png);
   }
-  &-6{
+
+  &-6 {
     background-image: url(../assets/img/stress1.png);
   }
-  &-7{
+
+  &-7 {
     background-image: url(../assets/img/jivit1.png);
   }
 
@@ -176,7 +195,8 @@
 
 .wrapper-info {
   display: flex;
-  .manifestations{
+
+  .manifestations {
     font-family: $primary-fonts;
     font-weight: 500;
   }
@@ -188,35 +208,75 @@
 }
 
 @include respond-to($lg) {
+  .section-symptoms-cause {
+    .heading-section {
+      .title {
+        text-align: center;
+      }
+
+      &.decor:before {
+        left: 20%;
+        right: 19%;
+
+      }
+    }
+  }
   .symptoms {
     width: 100%;
     padding-left: 0;
+
     .scheme {
       position: static;
       -webkit-transform: none;
       transform: none;
       padding: 0;
       width: 100%;
+
       &__img {
         display: block;
       }
     }
+
+    .scheme-list {
+      padding-left: 40px;
+      &__item {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background:#9b51d9;
+          z-index: 1;
+          left: -40px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
     .reason-list {
       position: relative;
       height: auto;
       width: auto;
       margin: auto;
     }
+
     .bg-intestine {
       display: none;
     }
+
     .wrapper-info {
       padding-left: 60px;
     }
+
     .text_small {
       font-size: 38px;
       margin-bottom: 30px;
     }
+
     .symptoms-list {
       font-size: 40px;
     }

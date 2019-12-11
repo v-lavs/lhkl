@@ -43,7 +43,6 @@
     line-height: 1.4;
     padding: 28px 105px 24px 28px;
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
-    //max-width: 435px;
     width: 100%;
     cursor: pointer;
 
@@ -91,7 +90,12 @@
       padding: 0;
     }
     .action-info{
-      width: inherit;
+      width: 100%;
+      text-align: center;
+      padding-right: 28px;
+      &:after{
+        display: none;
+      }
     }
     .benefit-list {
       justify-content: center;
