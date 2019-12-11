@@ -45,6 +45,7 @@
 
 @include respond-to($lg) {
   .section-during-children {
+    padding-bottom: 170px;
     .heading-section {
       text-align: center;
       &:before {
@@ -64,7 +65,29 @@
       transform: none;
       margin-bottom: 100px;
     }
-
+    .benefit-list {
+      justify-content: center;
+      margin-left: -45px;
+      margin-right: -45px;
+      &__item {
+        margin-bottom: 95px;
+        width: 33%;
+        font-size: 32px;
+        color: #1694d4;
+        font-family: $primary-fonts;
+        font-weight: 500;
+        .text {
+          color: inherit;
+          font-size: 35px;
+          font-family: $primary-fonts;
+        }
+        .bg-benefit{
+          margin: 0 auto 20px;
+          width: 205px;
+          height: 205px;
+        }
+      }
+    }
   }
 }
 
