@@ -85,6 +85,23 @@
       height: 200px;
     }
   }
+  .actions-info {
+    position: relative;
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: 40px;
+    }
+    .owl-next {
+      right: 15%;
+    }
+    .owl-prev {
+      left: 15%;
+    }
+  }
   .section-features {
     .container{
       padding: 0;

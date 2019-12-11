@@ -239,3 +239,17 @@
 
 }
 
+@include respond-to($sm) {
+  .women-img {
+    &_mobile {
+      margin-bottom: 75px;
+    }
+  }
+}
+@include respond-to($xs) {
+  .women-img {
+    &_mobile {
+      margin-bottom: 35px;
+    }
+  }
+}

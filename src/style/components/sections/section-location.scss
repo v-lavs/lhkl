@@ -157,7 +157,35 @@
         display: none;
       }
     }
+    .content-box {
+      padding-left: 0;
+    }
   }
+}
+
+@include respond-to($sm) {
+ .section-location {
+   .heading-section {
+     margin-bottom: 40px;
+   }
+   .wrap-map {
+     margin-bottom: 50px;
+   }
+   .btn-main {
+     height: auto;
+     padding: 18px 20px;
+     font-size: 24px;
+     max-width: 240px;
+   }
+ }
+}
+@include respond-to($xs) {
+ .section-location {
+   .btn-main {
+     font-size: 13px;
+     max-width: 160px;
+   }
+ }
 }
 
 @include respond-to($xs) {
