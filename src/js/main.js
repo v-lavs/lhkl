@@ -53,6 +53,10 @@ $(document).ready(function () {
                 items: 1,
                 stagePadding: 150,
             },
+            // 820: {
+            //     items: 1,
+            //     stagePadding: 180,
+            // },
             1190: {
                 items: 3,
             }
