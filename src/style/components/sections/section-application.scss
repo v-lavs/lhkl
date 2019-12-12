@@ -203,6 +203,7 @@
 @include respond-to($lg) {
   .section-application {
     padding-bottom: 150px;
+
     .container {
       padding-left: 10px;
       padding-right: 10px;
@@ -257,9 +258,11 @@
 
     .age-list {
       width: 100%;
+
       br {
         display: none;
       }
+
       .wrap-icon-bg {
         width: 15%;
         background-position: 0 center;
@@ -291,6 +294,7 @@
       &:last-child {
         border: none;
       }
+
       &:before {
         display: none;
       }
@@ -336,16 +340,62 @@
 
 @include respond-to($xs) {
   .section-application {
+    .container {
+      padding-bottom: 0;
+    }
+
     padding-bottom: 100px;
-    .text-mobile{
+
+    .text-mobile {
       padding-left: 55px;
       padding-right: 36px;
       padding-top: 20px;
+
       &__item {
         font-weight: 500;
         font-size: 12px;
         margin-bottom: 17px;
       }
+    }
+
+    .age-list .wrap-icon-bg {
+      width: 6%;
+      margin-right: 12px;
+    }
+
+    .equally,
+    .dosage,
+    .age {
+      font-size: 11px;
+    }
+
+    .reception-bg-img {
+      width: 37px;
+      height: 37px;
+    }
+
+    .reception-list__item {
+      height: 56px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .age-list__item {
+      height: 56px;
+      padding: 10px 0 10px 20px;
+    }
+
+    .dosage,
+    .equally {
+      margin: 0;
+    }
+
+    .dosage {
+
+    }
+
+    .age {
+
     }
   }
 }
