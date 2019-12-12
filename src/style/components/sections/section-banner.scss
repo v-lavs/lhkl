@@ -180,6 +180,10 @@
 @include respond-to($xs){
   .section-banner{
     padding-top: 63px;
+    padding-bottom: 38px;
+    &.decor:before{
+      display: none;
+    }
     &__slogan{
       position: relative;
       font-size: 27px;
