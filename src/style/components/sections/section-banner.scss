@@ -175,3 +175,22 @@
     }
   }
 }
+
+
+@include respond-to($xs){
+  .section-banner{
+    padding-top: 63px;
+    &__slogan{
+      position: relative;
+      font-size: 27px;
+      font-family: $primary-fonts;
+      font-weight: 600;
+      margin-left: 0;
+      margin-bottom: 30px;
+      padding-left: 0;
+      .text{
+        font-size: inherit;
+      }
+    }
+  }
+}

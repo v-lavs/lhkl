@@ -146,6 +146,8 @@
       width: 33%;
       padding-bottom: 20px;
       padding-top: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
       &:after{
         background-size: 14px 8px, 0% 8px;
       }
@@ -157,6 +159,7 @@
         font-weight: 500;
       }
       .bg-benefit {
+        margin: 0 auto 9px;
         width: 67px;
         height: 67px;
       }
