@@ -144,7 +144,8 @@
 @include respond-to($xs) {
   .section-faq {
     .heading-section{
-      margin-bottom: 30px;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
     }
     .sub-title {
       font-size: 10px;
@@ -159,6 +160,7 @@
       }
 
       &__title {
+        font-weight: 500;
         font-size: 15px;
         margin-bottom: 18px;
       }

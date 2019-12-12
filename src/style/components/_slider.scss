@@ -14,15 +14,12 @@
     display: flex;
     width: 44px;
     height: 74px;
-
-    border: none;
-    //box-shadow: 13px 23px 81px rgba(0, 15, 26, 0.31);
     pointer-events: all;
     overflow: hidden;
     text-indent: -999rem;
     background-repeat: no-repeat !important;
     background-position: center center !important;
-    background-size: 15px auto;
+    background-size: 20px auto!important;
     -webkit-transition: .45s;
     transition: .45s;
 
@@ -38,5 +35,13 @@
   }
 }
 
+@include respond-to($xs) {
+  .owl-nav {
+    .owl-next,
+    .owl-prev {
+      width: 40px;
+      height: 40px;
 
-
+    }
+  }
+}

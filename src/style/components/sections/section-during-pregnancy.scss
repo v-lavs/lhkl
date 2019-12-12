@@ -266,6 +266,7 @@
     .properties {
       justify-content: flex-start;
     }
+
     .property-1:after {
       border-width: 42px 0 42px 25px;
       right: -20px;
@@ -282,12 +283,18 @@
   .section-during-pregnancy {
     padding-top: 0;
     padding-bottom: 80px;
+
+    .heading-section {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
     .benefit-list {
       padding-top: 0;
 
       &__item {
-        margin-bottom: 20px;
-        width: 30%;
+        margin-bottom: 10px;
+        width: 30.3%;
 
         sup {
           font-size: 8px;
@@ -310,6 +317,7 @@
     }
 
     .properties {
+      padding-top: 20px;
       .wrap-icon {
         width: 60px;
         height: 60px;
