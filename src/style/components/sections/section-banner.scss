@@ -99,6 +99,7 @@
     .advantages {
       width: 100%;
       float: none;
+      padding-left: 0;
     }
 
     .advantages {
@@ -155,7 +156,9 @@
         padding: 16px 67px 20px 78px;
         margin-top: 90px;
         text-align: center;
+        justify-content: center;
         font-size: 45px;
+        min-height: 0;
         &.advantages__decor:before {
           position: absolute;
           top: 0;
@@ -177,10 +180,34 @@
 }
 
 
+@include respond-to($sm){
+  .section-banner {
+    padding-top: 80px;
+
+    &__slogan {
+      margin-bottom: 40px;
+    }
+    &__content-wrap {
+      padding-bottom: 0;
+      margin-bottom: 10px;
+    }
+    .advantages__card {
+      text-align: center;
+      font-size: 28px;
+      line-height: 1.25;
+      border-radius: 5px;
+      &.advantages__decor:before{
+        width: 30px;
+        height: 30px;
+        border-width: 4px;
+      }
+    }
+  }
+}
+
 @include respond-to($xs){
   .section-banner{
     padding-top: 63px;
-    padding-bottom: 38px;
     &.decor:before{
       display: none;
     }
@@ -195,6 +222,10 @@
       .text{
         font-size: inherit;
       }
+    }
+    .advantages__card {
+      padding: 8px 25px 12px;
+      font-size: 14px;
     }
   }
 }

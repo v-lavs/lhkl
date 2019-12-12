@@ -262,6 +262,15 @@
       margin-bottom: 75px;
     }
   }
+  .section-during-pregnancy {
+    .properties {
+      justify-content: flex-start;
+    }
+    .property-1:after {
+      border-width: 42px 0 42px 25px;
+      right: -20px;
+    }
+  }
 }
 
 @include respond-to($xs) {
@@ -322,6 +331,8 @@
 
     .property-1,
     .property-2 {
+      display: flex;
+      align-items: center;
       font-size: 11px;
       min-height: 60px;
       padding: 9px 5px 9px 20px;

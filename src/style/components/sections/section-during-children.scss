@@ -108,6 +108,15 @@
   }
 }
 
+@include respond-to($sm) {
+  .section-during-children {
+    .benefit-list__item .bg-benefit {
+      width: 130px;
+      height: 130px;
+    }
+  }
+}
+
 @include respond-to($xs) {
   .section-during-children {
     padding-bottom: 70px;
@@ -121,7 +130,7 @@
       margin-bottom: 30px;
       width: 30%;
       &:after{
-        background-size: 14px 8px, 0% 8px;
+        background-size: 14px 8px, 0 8px;
       }
       sup{
         font-size: 8px;

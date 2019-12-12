@@ -122,6 +122,9 @@
   .header {
     padding-top: 20px;
     padding-bottom: 15px;
+    &:after {
+      box-shadow: none;
+    }
   }
   .main-logo {
     max-width: 120px;

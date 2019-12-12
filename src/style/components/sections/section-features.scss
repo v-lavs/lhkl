@@ -81,7 +81,7 @@
   .benefits-section {
     padding-top: 210px;
     background-size: 100%;
-    .bg-benefit{
+    .bg-benefit {
       height: 200px;
     }
   }
@@ -103,14 +103,14 @@
     }
   }
   .section-features {
-    .container{
+    .container {
       padding: 0;
     }
-    .action-info{
+    .action-info {
       width: 100%;
       text-align: center;
       padding-right: 28px;
-      &:after{
+      &:after {
         display: none;
       }
     }
@@ -132,16 +132,36 @@
   }
 }
 
-@include respond-to($xs){
-  .section-features{
-    .heading-section{
+@include respond-to($sm) {
+  .section-features {
+    .benefit-list__item {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .bg-benefit {
+      height: 85px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .section-features {
+    .heading-section {
       margin-bottom: 20px;
     }
-    .benefits-section{
+    .benefits-section {
       padding-top: 0;
       padding-bottom: 100px;
     }
+
+    .benefit-list {
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .benefit-list__item {
+      font-size: 11px;
       margin-bottom: 0;
       width: 33%;
       padding-bottom: 20px;
@@ -149,16 +169,16 @@
       padding-left: 5px;
       padding-right: 5px;
       &:nth-child(1),
-      &:nth-child(3){
+      &:nth-child(3) {
         margin-top: -116px;
       }
-      &:after{
+      &:after {
         background-size: 14px 8px, 0% 8px;
       }
-      sup{
+      sup {
         font-size: 8px;
       }
-      .text{
+      .text {
         font-size: 11px;
         font-weight: 500;
       }
@@ -168,11 +188,11 @@
         height: 67px;
       }
     }
-    .action-info{
+    .action-info {
       padding: 10px;
       border-radius: 8px;
     }
-    .actions-info{
+    .actions-info {
       margin-top: 30px;
       margin-bottom: 0;
     }
