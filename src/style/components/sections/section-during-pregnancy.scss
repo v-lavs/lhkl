@@ -272,13 +272,12 @@
   }
   .section-during-pregnancy {
     padding-top: 0;
-
+    padding-bottom: 80px;
     .benefit-list {
       padding-top: 0;
+
       &__item {
-
-
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         width: 30%;
 
         sup {
@@ -296,8 +295,53 @@
         }
       }
     }
+
     .text {
       margin-bottom: 25px;
+    }
+
+    .properties {
+      .wrap-icon {
+        width: 60px;
+        height: 60px;
+        border: 5px solid $white;
+        border-radius: 10px;
+        background-size: 90%, 100%;
+
+        &:after {
+          border-width: 12px 0 12px 18px;
+          border-color: transparent transparent transparent $white;
+          right: -22px;
+        }
+      }
+    }
+
+    .box-properties {
+      border-radius: 10px;
+    }
+
+    .property-1,
+    .property-2 {
+      font-size: 11px;
+      min-height: 60px;
+      padding: 9px 5px 9px 20px;
+    }
+
+    .property-2 {
+      padding-left: 28px;
+      flex-shrink: 0;
+    }
+
+    .property-1 {
+      //display: flex;
+      //align-items: center;
+    }
+
+    &:after {
+      border-width: 31px 0 31px 18px;
+      border-color: transparent transparent transparent $white;
+      right: -18px;
+
     }
   }
 }
