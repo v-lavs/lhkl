@@ -148,6 +148,10 @@
       padding-top: 15px;
       padding-left: 5px;
       padding-right: 5px;
+      &:nth-child(1),
+      &:nth-child(3){
+        margin-top: -116px;
+      }
       &:after{
         background-size: 14px 8px, 0% 8px;
       }
@@ -164,5 +168,14 @@
         height: 67px;
       }
     }
+    .action-info{
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .actions-info{
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
   }
+
 }

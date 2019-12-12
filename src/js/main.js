@@ -47,6 +47,10 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
+                stagePadding: 75,
+            },
+            580: {
+                items: 1,
                 stagePadding: 150,
             },
             1190: {

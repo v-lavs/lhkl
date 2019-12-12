@@ -341,12 +341,11 @@
 @include respond-to($xs) {
   .section-application {
     padding-top: 0;
+    padding-bottom: 100px;
 
     .container {
       padding-bottom: 0;
     }
-
-    padding-bottom: 100px;
 
     .text-mobile {
       padding-left: 55px;
@@ -360,43 +359,56 @@
       }
     }
 
-    .age-list .wrap-icon-bg {
-      width: 6%;
-      margin-right: 12px;
-    }
-
     .equally,
     .dosage,
     .age {
-      font-size: 11px;
+      font-size: 10px;
     }
 
     .reception-bg-img {
       width: 37px;
       height: 37px;
-      &:before{
+
+      &:before {
         font-size: 9px;
         top: -1px;
         left: -15px;
       }
     }
 
-    .reception-list__item {
-      height: 56px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+    .reception-list {
+      padding-bottom: 0;
+
+      &__item {
+        height: 56px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
 
-    .age-list{
-      width: 80%;
+    .age-list {
+      width: 70%;
+
+      .wrap-icon-bg {
+        width: 6%;
+        height: 23px;
+        margin-right: 12px;
+      }
+
       &__item {
-      height: 56px;
-      padding: 10px 0 10px 20px;
+        height: 56px;
+        padding: 10px 0 10px 20px;
+
+      }
     }
-  }
+
     .dosage,
     .equally {
       margin: 0;
+    }
+
+    .bg-section-application {
+      padding-top: 0;
     }
   }
 }
