@@ -1,4 +1,42 @@
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+
+  .owl-next,
+  .owl-prev {
+    display: flex;
+    width: 44px;
+    height: 74px;
+
+    border: none;
+    //box-shadow: 13px 23px 81px rgba(0, 15, 26, 0.31);
+    pointer-events: all;
+    overflow: hidden;
+    text-indent: -999rem;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 15px auto;
+    -webkit-transition: .45s;
+    transition: .45s;
+
+    &.disabled {
+      visibility: hidden;
+    }
+  }
+  .owl-next {
+    background-image: url(../assets/img/icons/chevron-thin-right.svg) !important;
+  }
+  .owl-prev {
+    background-image: url(../assets/img/icons/chevron-thin-left.svg) !important;
+  }
+}
 
 
 
-//==========RESPONSIVE==========================
