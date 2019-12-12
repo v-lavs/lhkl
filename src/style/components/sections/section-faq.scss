@@ -154,6 +154,9 @@
     .card-question {
       padding-top: 19px;
       padding-bottom: 20px;
+      &:after{
+        background-size: 14px 8px, 0% 8px;
+      }
 
       &__title {
         font-size: 15px;
