@@ -200,9 +200,10 @@
     .btn-main {
       margin-top: 32px;
       margin-bottom: 37px;
-      font-size: 17px;
+      font-size: 14px;
       border: 2px solid;
-      padding: 17px 30px;
+      padding: 14px 30px;
+      border-radius: 22px;
       width: 65%;
       height: auto;
     }
@@ -211,5 +212,6 @@
     font-size: 7px;
     line-height: 1.5;
     margin-bottom: 25px;
+    padding-left: 35px;
   }
 }
