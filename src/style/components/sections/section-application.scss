@@ -340,6 +340,7 @@
 
 @include respond-to($xs) {
   .section-application {
+    padding-top: 0;
     .container {
       padding-bottom: 0;
     }

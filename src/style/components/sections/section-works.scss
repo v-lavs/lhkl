@@ -163,6 +163,8 @@
 
 @include respond-to($xs) {
   .section-works {
+    padding-top: 0;
+    margin-bottom: 100px;
     .heading-section {
       max-width: 140px;
     }
